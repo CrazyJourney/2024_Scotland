@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 <head> 
   <meta charset="utf-8">
   <title>Scotland@CrazyJourney</title>
@@ -31,16 +31,21 @@
  
 
  <script type="text/javascript">
+  console.log("GGRRRR");
   // https://codedamn.com/news/javascript/how-to-read-csv-with-javascript
   var xx = "https://docs.google.com/spreadsheets/d/137gM-lPpEcHj0v5gEYwvAIOLYPfAJ8wSDCkjEp3t1Bw/edit?usp=sharing";
+  var yy = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSFhYEda6xqhNTlUM2PlR6U4uAmH_wBJR9WqaZtEHWhEui9gVcNmXyJucyRuWIhziPqdgusrjOimFrc/pub?output=csv"
   var csvId = "137gM-lPpEcHj0v5gEYwvAIOLYPfAJ8wSDCkjEp3t1Bw";
-  var csvUrl = "https://spreadsheets.google.com/spreadsheet/pub?key="+csvId+"&output=csv";
+  // var csvUrl = "https://spreadsheets.google.com/spreadsheet/pub?key="+csvId+"&output=csv";
+  var csvUrl = yy;
+  // "https://spreadsheets.google.com/spreadsheet/pub?key=137gM-lPpEcHj0v5gEYwvAIOLYPfAJ8wSDCkjEp3t1Bw&output=csv"
  </script>
 
  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
 
  <script type="text/javascript">
         const csvData=[];
+        console.log("HI");
         Papa.parse(csvUrl, {
                     download: true,
                     header: true,
@@ -78,9 +83,9 @@
  <script src="//cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" type="text/javascript"></script>
  <script src="//cdnjs.cloudflare.com/ajax/libs/openseadragon/3.0.0/openseadragon.min.js" type="text/javascript"></script>	
  <script src="./js/jquery.star-rating-svg.js" type="text/javascript"></script> 
- <script src="./js/neumorphism.js" type="text/javascript"></script>
- <script src="./js/map.js" type="text/javascript"></script>  
- <script src="./js/crazyJourney.js" type="text/javascript"></script>		
+ <!--script src="./js/neumorphism.js" type="text/javascript"></script-->
+ <!--script src="./js/map.js" type="text/javascript"></script-->  
+ <!--script src="./js/crazyJourney.js" type="text/javascript"></script-->		
 
 </body>
 </html>
