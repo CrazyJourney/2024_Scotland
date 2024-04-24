@@ -53,8 +53,8 @@
                     complete: function (answer) {
                         console.log("hi");
                         for (i=0; i<answer.data.length; i++) {
-                            console.log(answer) 
-                            csvData.push(answer.data[i].APFD);
+                            console.log(answer.data[i]);
+                            csvData.push(answer.data[i]);
                         }
                         console.log(csvData);
                     }
