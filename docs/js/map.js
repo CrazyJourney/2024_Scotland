@@ -1,8 +1,5 @@
 {
 
-
-
-
 var OpenStreetMap_DE = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
  maxZoom: 16,
  minZoom: 1,

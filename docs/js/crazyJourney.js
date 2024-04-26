@@ -168,7 +168,7 @@ var i18n = new VueI18n({ locale: findPreferedLanguage(), messages: {en: {}, de: 
 
 var vueGCPE = new Vue({
   i18n: { locale: findPreferedLanguage(), messages: {en: {}, de: {} }},
-  el: '#gcpe', 
+  el: '#crazyJourney', 
   data: {
         uid: '0',
         uidOld: '0',
