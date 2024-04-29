@@ -478,7 +478,7 @@ var vueGCPE = new Vue({
                     header: true,
                     skipEmptyLines: true,
                     complete: function (answer) {
-                        console.log("hi");
+                        console.log("Ho");
                         for (i=0; i<answer.data.length; i++) {
                             console.log(answer.data[i]);
                             //csvData.push(answer.data[i]);
@@ -674,6 +674,7 @@ var vueGCPE = new Vue({
   mounted () { 
      //this.checkMap();
      //this.initSeadragon();
+     this.inqTable();
   },
   created () {
      this.inqLocale('de');
