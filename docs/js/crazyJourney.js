@@ -482,7 +482,7 @@ var vueGCPE = new Vue({
                         for (i=0; i<answer.data.length; i++) {
                             console.log(answer.data[i]);
                             //csvData.push(answer.data[i]);
-                            this.addTableRow(answer.data[i]);
+                            vueGCPE.addTableRow(answer.data[i]);
 
                             if (typeof initMap === 'function') {
                               addPosterMarkers(answer.data[i]);
