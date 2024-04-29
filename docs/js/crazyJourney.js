@@ -467,7 +467,7 @@ var vueGCPE = new Vue({
 
      inqTable: function () {
        //var csvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSFhYEda6xqhNTlUM2PlR6U4uAmH_wBJR9WqaZtEHWhEui9gVcNmXyJucyRuWIhziPqdgusrjOimFrc/pub?output=csv";
-       clearTableRows();
+       this.clearTableRows();
 
        if (typeof initMap === 'function') {
          clearPosterMarkers();
@@ -482,7 +482,7 @@ var vueGCPE = new Vue({
                         for (i=0; i<answer.data.length; i++) {
                             console.log(answer.data[i]);
                             //csvData.push(answer.data[i]);
-                            addTableRow(answer.data[i]);
+                            this.addTableRow(answer.data[i]);
 
                             if (typeof initMap === 'function') {
                               addPosterMarkers(answer.data[i]);
