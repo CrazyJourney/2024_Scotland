@@ -672,6 +672,9 @@ var vueGCPE = new Vue({
     },
   },
   mounted () { 
+     if (typeof initMap === 'function') {
+        initMap();
+     }
      //this.checkMap();
      //this.initSeadragon();
      this.inqTable();
