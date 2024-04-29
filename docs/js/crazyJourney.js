@@ -485,7 +485,7 @@ var vueGCPE = new Vue({
                             vueGCPE.addTableRow(answer.data[i]);
 
                             if (typeof initMap === 'function') {
-                              addPosterMarkers(answer.data[i]);
+                              addPosterMarkers([answer.data[i]]);
                             }
 
                         }
