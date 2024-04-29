@@ -118,7 +118,7 @@ function addPosterMarkers(posters) {
       "properties": poster,
       "geometry": {
         "type": "Point",
-        "coordinates": [poster.longitude, poster.latitude]
+        "coordinates": [poster.Longitude, poster.Latitude]
       }
     };
     pointLayer.addData(geojsonFeature);
