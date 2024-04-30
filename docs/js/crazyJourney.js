@@ -173,7 +173,8 @@ var vueGCPE = new Vue({
         uid: '0',
         uidOld: '0',
         //posterIds: [],
-        allPosterData: [],    
+        allPosterData: [], 
+        externalUrlContent: null,   
         selectedPosterData: [],
         currentPosterData: null, 
         allPosterContinents: [],
@@ -256,7 +257,22 @@ var vueGCPE = new Vue({
      },
      selectPoster: function(poster) {
         this.currentPosterData = poster;
+
+        var volumesUrl = "https://globalchanges.github.io/PosterExplorer/meta/countries.json";
+        if(poster.Url) {
+        axios
+         .get(poster.Url)
+         .then(response => { 
+            this.setContent(response.data);
+        });
+        }
+
+
      },
+
+     setContent: function(data) {
+        this.externalUrlContent = data;
+     }, 
      addPoster: function(json) { 
         // Vue.set(this.allPosterData2, json.id, json); 
         this.allPosterData.push(json);
