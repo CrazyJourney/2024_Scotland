@@ -40,9 +40,9 @@
    <b>{{currentPosterData.Description}}</b>
 
 
-
-<iframe :src="currentPosterData.Url" width="100%" h2eight="400" :name="currentPosterData.Title" :title="currentPosterData.Title">
   <div v-html="externalUrlContent">nn</div>
+<iframe :src="currentPosterData.Url" width="100%" h2eight="400" :name="currentPosterData.Title" :title="currentPosterData.Title">
+
   <p>Ihr Browser kann leider keine eingebetteten Frames anzeigen:
   Sie können die eingebettete Seite über den folgenden Verweis aufrufen: 
   <a :href="currentPosterData.Url">{{currentPosterData.Title}}</a>
