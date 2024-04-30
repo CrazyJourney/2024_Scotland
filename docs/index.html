@@ -36,15 +36,15 @@
   </div>
   <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 mb-5">
   <div v-if="currentPosterData">
-   <h2>{{currentPosterData.title}}</h2>
-   <b>{{currentPosterData.description}}</b>
+   <h2>{{currentPosterData.Title}}</h2>
+   <b>{{currentPosterData.Description}}</b>
 
 
 
-<iframe :src="currentPosterData.url" w2idth="900" h2eight="400" :name="currentPosterData.title" :title="currentPosterData.title">
+<iframe :src="currentPosterData.Url" width="100%" h2eight="400" :name="currentPosterData.Title" :title="currentPosterData.Title">
   <p>Ihr Browser kann leider keine eingebetteten Frames anzeigen:
   Sie können die eingebettete Seite über den folgenden Verweis aufrufen: 
-  <a :href="currentPosterData.url">{{currentPosterData.title}}</a>
+  <a :href="currentPosterData.Url">{{currentPosterData.Title}}</a>
   </p>
 </iframe>
   </div> 

@@ -84,7 +84,7 @@ function getMarkerOptions(property) {
   // if icon -> use...
   // if topic -> use... (or subtopic ???)
   var color = 'violet';
-  var html = "<br style='font-size: 50%'/><b title='"+property.description+"'>"+property.title+"</b>";
+  var html = "<br style='font-size: 50%'/><b title='"+property.Description+"'>"+property.Title+"</b>";
   if(property.icon) {
      color = 'blue-dark';
      if(property.freidok) {
