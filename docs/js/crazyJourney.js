@@ -483,9 +483,10 @@ var vueGCPE = new Vue({
                             console.log(answer.data[i]);
                             //csvData.push(answer.data[i]);
                             vueGCPE.addTableRow(answer.data[i]);
-
-                            if (typeof initMap === 'function') {
-                              addPosterMarkers([answer.data[i]]);
+                            if((answer.data[i].Latitude) and (answer.data[i].Longitude)) {
+                              if (typeof initMap === 'function') {
+                                addPosterMarkers([answer.data[i]]);
+                              }
                             }
 
                         }

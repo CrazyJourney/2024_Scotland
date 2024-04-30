@@ -84,7 +84,7 @@ function getMarkerOptions(property) {
   // if icon -> use...
   // if topic -> use... (or subtopic ???)
   var color = 'violet';
-  var html = "<br style='font-size: 50%'/><b>"+property.id+"</b>";
+  var html = "<br style='font-size: 50%'/><b title='"+property.description+"'>"+property.title+"</b>";
   if(property.icon) {
      color = 'blue-dark';
      if(property.freidok) {
@@ -92,13 +92,13 @@ function getMarkerOptions(property) {
      }
      html = "<img src='"+property.icon+"' width='22' height='22' class='marker-image' ></img>";
   } 
-  var extraOptions = {icon: 'fa-number',
+  var extraOptions = {icon: 'fa-coffee',
     innerHTML: html,
     markerColor: color,
     iconColor: 'black',
     shape: 'circle',
     prefix: 'fa',
-    number: property.id
+    //number: property.id
   };
   return extraOptions;
 }  
